@@ -11,7 +11,7 @@
                         :group="{ name: 'row' }"
                     >
                     <!-- <transition-group> -->
-                        <img v-for="hero in heroes" :key="hero.id" class="item" :src="'dist/img/heroes/'+hero.img" :title="hero.name+' '+hero.name_en" width="80">
+                        <img v-for="hero in heroes" :key="hero.id" class="item" :src="'dist/img/heroes_pic/'+hero.img" :title="hero.name+' '+hero.name_en" width="80">
                     <!-- </transition-group> -->
                 </draggable>
             </b-row>
@@ -28,7 +28,7 @@
                         draggable=".item"
                         :group="{ name: 'row' }"
                     >
-                    <img v-for="hero in super_sync" :key="hero.id" class="item" :src="'dist/img/heroes/'+hero.img" :title="hero.name+' '+hero.name_en" width="80">
+                    <img v-for="hero in super_sync" :key="hero.id" class="item" :src="'dist/img/heroes_pic/'+hero.img" :title="hero.name+' '+hero.name_en" width="80">
                 </draggable>
             </b-row>
 
@@ -45,7 +45,7 @@
                             draggable=".item"
                             :group="{ name: 'row' }"
                         >
-                        <img v-for="hero in main" :key="hero.id" class="item" :src="'dist/img/heroes/'+hero.img" :title="hero.name+' '+hero.name_en" width="80">
+                        <img v-for="hero in main" :key="hero.id" class="item" :src="'dist/img/heroes_pic/'+hero.img" :title="hero.name+' '+hero.name_en" width="80">
                     </draggable>
                 </b-col>
                 
@@ -61,7 +61,7 @@
                             draggable=".item"
                             :group="{ name: 'row' }"
                         >
-                        <img v-for="hero in normal" :key="hero.id" class="item" :src="'dist/img/heroes/'+hero.img" :title="hero.name+' '+hero.name_en" width="80">
+                        <img v-for="hero in normal" :key="hero.id" class="item" :src="'dist/img/heroes_pic/'+hero.img" :title="hero.name+' '+hero.name_en" width="80">
                     </draggable>
                 </b-col>
 
@@ -77,7 +77,7 @@
                             draggable=".item"
                             :group="{ name: 'row' }"
                         >
-                        <img v-for="hero in garbage" :key="hero.id" class="item" :src="'dist/img/heroes/'+hero.img" :title="hero.name+' '+hero.name_en" width="80">
+                        <img v-for="hero in garbage" :key="hero.id" class="item" :src="'dist/img/heroes_pic/'+hero.img" :title="hero.name+' '+hero.name_en" width="80">
                     </draggable>
                 </b-col>
             </b-row>
@@ -96,7 +96,7 @@
             <ul>            
                 <li v-for="(garbageHeroId, index) in garbage" draggable="true">
                     <span v-for="hero in heroes" v-if="hero.id == garbageHeroId">
-                        <img :src="'dist/img/heroes/'+hero.img" :title="hero.name+' '+hero.name_en" width="80">
+                        <img :src="'dist/img/heroes_pic/'+hero.img" :title="hero.name+' '+hero.name_en" width="80">
                     </span>
                 </li>
             </ul>

@@ -584,7 +584,7 @@ export default {
                     id: 79,
                     name: '班尼拉',
                     name_en: 'Vanille',
-                    img: 'Vanille.png',
+                    img: 'vanille.png',
                 },
                 {
                     id: 80,
